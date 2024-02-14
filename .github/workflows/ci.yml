@@ -5,6 +5,10 @@ on:
   push:
   pull_request:
 
+# Declare default permissions as read only.
+permissions: read-all
+
+
 jobs:
   test:
     name: Run tests
