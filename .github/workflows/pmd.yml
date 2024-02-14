@@ -12,6 +12,9 @@ jobs:
   pmd:
     name: Run tests
     runs-on: ubuntu-22.04
+    permissions:
+      # required for all workflows
+      security-events: write
     steps:
       - name: Check out the Git repository
         uses: actions/checkout@v4
