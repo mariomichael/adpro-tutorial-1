@@ -1,0 +1,5 @@
+REFLEKSI 1
+Saya merasa pengetahuan saya bertambah banyak setelah mengerjakan exercise 1. Ada beberapa penerapan clean code yang saya lakukan pada tutorial ini. Salah satu penerapan tersebut adalah menggunakan variabel atau nama yang jelas dan menggambarkan apa yang Ia lakukan. Hal ini akan memudahkan kita untuk mengerti tujuan kode tersebut. Selain itu pada tutorial ini juga saya tidak menambah comment yang bertele-tele dan tidak berguna, penggunaannya lebih efisien. Terakhir, saya menggunakan konsep object-oriented programming untuk menghasilkan code yang lebih terstruktur dan mudah dibaca.
+
+REFLEKSI 2
+Setelah membuat unit test saya merasa lebih tenang. Saya yakin kode yang saya hasilkan benar karena saya selalu melakukan test ulang ketika ada perubahan. Seharusnya dalam satu class ada minimal satu function test untuk setiap method yang ada. Memastikan unit test benar bisa dengan mencoba manual atau mencoba beberapa test-case yang dirasa sudah valid. Menurut saya code coverages tidak menentukan segalanya. Buat apa tinggi tapi tidak berkualitas? Menurut saya kebersihan kodenya jadi terganggu karena jadi seperti ada repetisi kode meskipun itu hanya unit test.
