@@ -36,7 +36,7 @@ public class ProductController {
         return "productList";
     }
 
-    @GetMapping("/edit/{productid}")
+    @GetMapping("/edit/{productId}")
     public String editProductPage(@PathVariable String productId, Model model) {
         Product product = service.findById(productId);
         model.addAttribute("product", product);
@@ -57,7 +57,6 @@ public class ProductController {
         return "redirect:list";
     }
 }
-
 
 @Controller
 @RequestMapping("/car")
