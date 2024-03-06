@@ -1,18 +1,13 @@
 package id.ac.ui.cs.advprog.eshop.repository;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.context.expression.MapAccessor;
-
-import com.github.dockerjava.api.model.Repository;
 
 import src.main.java.id.ac.ui.cs.advprog.eshop.enums;
 
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.*;
-import id.ac.ui.cs.advprog.eshop.model.Order;
+
 import id.ac.ui.cs.advprog.eshop.model.Payment;
-import id.ac.ui.cs.advprog.eshop.model.Product;
 
 public class PaymentRepositoryTest {
     PaymentRepository paymentRepository;
@@ -45,6 +40,7 @@ public class PaymentRepositoryTest {
         Payment findResult = paymentRepository.findById(payments.get(1).getId());
 
         assertEquals(payment.getId(), findResult.getId());
+        assertEquals(payment.getId(), result.getId());
         assertEquals(payment.getMethod(), findResult.getMethod());
         assertEquals(payment.getPaymentData(), findResult.getPaymentData());
         assertEquals(payment.getStatus(), findResult.getStatus());
@@ -60,6 +56,7 @@ public class PaymentRepositoryTest {
 
         assertEquals(payment.getId(), result.getId());
         assertEquals(payment.getMethod(), result.getMethod());
+        assertEquals(payment.getId(), findResult.getId());
         assertEquals(payment.getPaymentData(), result.getPaymentData());
         assertEquals(payment.getStatus(), result.getStatus());
     }
